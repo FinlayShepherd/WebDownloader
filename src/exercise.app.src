@@ -1,0 +1,19 @@
+{application, exercise,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {exercise_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    mochiweb
+   ]},
+  {env,[{http_client_timeout, 5000},
+        {http_server_port, 6500},
+        {http_server_listen_ip, any}]},
+  {modules, []},
+
+  {maintainers, []},
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
